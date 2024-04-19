@@ -66,9 +66,9 @@ ENDC
 
 .Strings:
 ; entries correspond to MAINMENUITEM_* constants
-	db "CONTINUE@"
-	db "NEW GAME@"
-	db "OPTION@"
+	db "KONTYNUUJ@"
+	db "NOWA GRA@"
+	db "OPCJE@"
 	db "MYSTERY GIFT@"
 IF DEF(_DEBUG)
 	db "DEBUG ROOM@"
@@ -205,7 +205,7 @@ MainMenu_PrintCurrentTimeAndDay:
 	call ClearBox
 	call GetWeekday
 	ld b, a
-	decoord 1, 14
+	decoord 1, 4
 	call PrintDayOfWeek
 	decoord 4, 16
 	ldh a, [hHours]
@@ -228,7 +228,7 @@ MainMenu_PrintCurrentTimeAndDay:
 	ret
 
 .TimeNotSetString:
-	db "TIME NOT SET@"
+	db "USTAW CZAS@"
 
 .MainMenuTimeUnknownText: ; unreferenced
 	text_far _MainMenuTimeUnknownText
@@ -250,15 +250,15 @@ PrintDayOfWeek:
 	ret
 
 .Days:
-	db "SUN@"
-	db "MON@"
-	db "TUES@"
-	db "WEDNES@"
-	db "THURS@"
-	db "FRI@"
-	db "SATUR@"
+	db "NIEDZIELA@"
+	db "PONIEDZIAŁEK@"
+	db "WTOREK@"
+	db "ŚRODA@"
+	db "CZWARTEK@"
+	db "PIĄTEK@"
+	db "SOBOTA"
 .Day:
-	db "DAY@"
+	db "@"
 
 ClearTilemapEtc:
 	xor a

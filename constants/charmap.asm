@@ -156,6 +156,28 @@
 	charmap "x",         $b7
 	charmap "y",         $b8
 	charmap "z",         $b9
+	
+	charmap "Ą",         $ba
+	charmap "Ć",         $bb
+	charmap "Ę",         $bc
+	charmap "Ł",         $bd
+	charmap "Ń",         $be
+	charmap "Ó",         $bf
+	
+	charmap "ć",         $bb
+	charmap "ó",         $bf
+	
+	charmap "Ś",         $c9
+	charmap "Ź",         $ca
+	charmap "Ż",         $cb
+	
+	charmap "ś",         $c9
+	charmap "ź",         $ca
+	charmap "ż",         $cb
+	charmap "ą",         $cc
+	charmap "ę",         $cd
+	charmap "ł",         $ce
+	charmap "ń",         $cf
 
 	charmap "Ä",         $c0
 	charmap "Ö",         $c1

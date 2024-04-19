@@ -115,8 +115,8 @@ NamingScreen:
 	ret
 
 .NicknameStrings:
-	db "'S@"
-	db "NICKNAME?@"
+	db "@"
+	db "NAZWA?@"
 
 .Player:
 	ld de, ChrisSpriteGFX
@@ -128,7 +128,7 @@ NamingScreen:
 	ret
 
 .PlayerNameString:
-	db "YOUR NAME?@"
+	db "TWOJE IMIĘ?@"
 
 .Rival:
 	ld de, RivalSpriteGFX
@@ -140,7 +140,7 @@ NamingScreen:
 	ret
 
 .RivalNameString:
-	db "RIVAL'S NAME?@"
+	db "IMIĘ RYWALA?@"
 
 .Mom:
 	ld de, MomSpriteGFX
@@ -152,7 +152,7 @@ NamingScreen:
 	ret
 
 .MomNameString:
-	db "MOTHER'S NAME?@"
+	db "IMIĘ MATKI?@"
 
 .Box:
 	ld de, PokeBallSpriteGFX
@@ -176,7 +176,7 @@ NamingScreen:
 	ret
 
 .BoxNameString:
-	db "BOX NAME?@"
+	db "NAZWA BOXU?@"
 
 .LoadSprite:
 	push de
