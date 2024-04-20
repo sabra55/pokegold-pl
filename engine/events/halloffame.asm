@@ -127,7 +127,7 @@ AnimateHallOfFame:
 	ret
 
 .String_NewHallOfFamer:
-	db "New Hall of Famer!@"
+	db "Nowy w SALI SŁAWY!@"
 
 GetHallOfFameParty:
 	ld hl, wHallOfFamePokemonList
@@ -389,17 +389,15 @@ _HallOfFamePC:
 	and a
 	ret
 
-.EmptyString:
-	db "@"
-
-.EmptyString2: ; unreferenced
-	db "@"
-
 .HOFMaster:
-	db "    HOF Master!@"
+	db "    Mistrz Sali!@"
 
 .TimeFamer:
-	db "    -Time Famer@"
+	db "    RAZ W SALI"
+
+.EmptyString:
+.EmptyString2:
+	db "@"
 
 LoadHOFTeam:
 	ld a, [wJumptableIndex]
@@ -607,4 +605,4 @@ HOF_AnimatePlayerPic:
 	ret
 
 .PlayTime:
-	db "PLAY TIME@"
+	db "CZAS GRY@"

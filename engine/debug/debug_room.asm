@@ -21,10 +21,6 @@ DEF DEBUGROOMMENU_NUM_PAGES EQU const_value
 	const DEBUGROOMMENUITEM_HALT_CHK_CLR ; c
 
 _DebugRoom:
-	ldh a, [hJoyDown]
-	and SELECT | START
-	cp SELECT | START
-	ret nz
 	ldh a, [hDebugRoomMenuPage]
 	push af
 	xor a

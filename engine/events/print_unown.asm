@@ -182,20 +182,20 @@ endc
 	ret
 
 AlphRuinsStampString:
-	db " ALPH RUINS STAMP@"
+	db "PIECZĘĆ RUIN ALPH@"
 
 UnownDexDoWhatString:
-	db "Do what?@"
+	db "Co zrobić?@"
 
 UnownDexMenuString:
-	db   UNOWNSTAMP_BOLD_A, "▶PRINT"
-	next UNOWNSTAMP_BOLD_B, "▶CANCEL"
-	next "L▶BEFORE"
-	next "R▶NEXT"
+	db   UNOWNSTAMP_BOLD_A, "▶DRUK"
+	next UNOWNSTAMP_BOLD_B, "▶ANULUJ"
+	next "L▶POPRZ."
+	next "R▶NAST."
 	db   "@"
 
 UnownDexVacantString:
-	db "VACANT@"
+	db "PUSTY@"
 
 UnownDexATile:
 INCBIN "gfx/printer/bold_a.1bpp"

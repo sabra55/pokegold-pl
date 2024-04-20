@@ -88,9 +88,9 @@ NameRival:
 
 .DefaultName:
 IF DEF(_GOLD)
-	db "SILVER@"
+	db "SREBRO@"
 ELIF DEF(_SILVER)
-	db "GOLD@"
+	db "ZŁOTO@"
 ENDC
 
 NameRater:
@@ -457,5 +457,3 @@ TrainerHouse:
 	ld a, [sMysteryGiftTrainerHouseFlag]
 	ld [wScriptVar], a
 	jp CloseSRAM
-
-	nop ; unused

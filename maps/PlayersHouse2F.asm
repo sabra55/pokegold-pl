@@ -91,23 +91,25 @@ PlayersHouseGameConsoleScript:
 	describedecoration DECODESC_CONSOLE
 
 PlayersRadioText1:
-	text "PROF.OAK'S #MON"
-	line "TALK! Please tune"
-	cont "in next time!"
+	text "MOWA #MONOWA!"
+	line "Prosimy o dołącze-"
+	
+	para "nie następnym ra-"
+	line "zem!"
 	done
 
 PlayersRadioText2:
-	text "#MON CHANNEL!"
+	text "KANAŁ #MON!"
 	done
 
 PlayersRadioText3:
-	text "This is DJ MARY,"
-	line "your co-host!"
+	text "Oto DJ MARY, twoja"
+	line "współprowadząca!"
 	done
 
 PlayersRadioText4:
 	text "#MON!"
-	line "#MON CHANNEL…"
+	line "KANAŁ #MON…"
 	done
 
 PlayersHouse2F_MapEvents:

@@ -205,7 +205,7 @@ MainMenu_PrintCurrentTimeAndDay:
 	call ClearBox
 	call GetWeekday
 	ld b, a
-	decoord 1, 4
+	decoord 1, 14
 	call PrintDayOfWeek
 	decoord 4, 16
 	ldh a, [hHours]

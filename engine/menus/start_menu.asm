@@ -197,11 +197,11 @@ StartMenu::
 .QuitString:     db "ZAKOŃCZ@"
 
 .PokedexDesc:
-	db   "Baza danych"
-	next "#MON@"
+	db   "Baza da-"
+	next "nych@"
 
 .PartyDesc:
-	db   "Status twych"
+	db   "Status"
 	next "#MONów@"
 
 .PackDesc:
@@ -209,12 +209,12 @@ StartMenu::
 	next "przedmioty@"
 
 .PokegearDesc:
-	db   "Sprzęt trene-"
-	next "ra@"
+	db   "Sprzęt"
+	next "trenera@"
 
 .StatusDesc:
-	db   "Twój własny"
-	next "status@"
+	db   "Twój włas-"
+	next "ny status@"
 
 .SaveDesc:
 	db   "Zapisz"
@@ -229,8 +229,8 @@ StartMenu::
 	next "menu@"
 
 .QuitDesc:
-	db   "Zakończ kon-"
-	next "kurs@"
+	db   "Zakończ"
+	next "konkurs@"
 
 .OpenMenu:
 	ld a, [wMenuSelection]

@@ -253,7 +253,7 @@ PokemonNames::
 	db "CELEBI@@@@"
 	assert_table_length NUM_POKEMON
 	db "?????@@@@@"
-	db "EGG@@@@@@@"
+	db "JAJO@@@@@@"
 	assert_table_length EGG
 	db "?????@@@@@"
 	db "?????@@@@@"

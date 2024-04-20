@@ -267,9 +267,9 @@ TrainerCard_PrintTopHalfOfCard:
 	ret
 
 .Name_Money:
-	db   "NAME/"
+	db   "IMIĘ/"
 	next ""
-	next "MONEY@"
+	next "KASA@"
 
 .ID_No:
 	db $27, $28, -1 ; ID NO
@@ -281,7 +281,7 @@ TrainerCard_Page1_PrintDexCaught_GameTime:
 	hlcoord 2, 10
 	ld de, .Dex_PlayTime
 	call PlaceString
-	hlcoord 12, 15
+	hlcoord 11, 15
 	ld de, .Badges
 	call PlaceString
 	ld hl, wPokedexCaught
@@ -305,13 +305,13 @@ TrainerCard_Page1_PrintDexCaught_GameTime:
 
 .Dex_PlayTime:
 	db   "#DEX"
-	next "PLAY TIME@"
+	next "CZAS GRY"
 
 .Unused: ; unreferenced
 	db "@"
 
 .Badges:
-	db "BADGES▶@"
+	db "ODZNAKI▶@"
 
 .StatusTilemap:
 	db $29, $2a, $2b, $2c, $2d, -1

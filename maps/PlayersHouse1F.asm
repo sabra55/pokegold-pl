@@ -148,143 +148,142 @@ MomWalksBackMovement:
 	step_end
 
 ElmsLookingForYouText:
-	text "Oh, <PLAYER>…! Our"
-	line "neighbor, PROF."
+	text "O, <PLAYER>…! Nasz"
+	line "sąsiad, PROF. ELM,"
+	cont "cię szukał."
 
-	para "ELM, was looking"
-	line "for you."
+	para "Mówił, że chce,"
+	line "żebyś zrobił coś"
+	cont "dla niego."
 
-	para "He said he wanted"
-	line "you to do some-"
-	cont "thing for him."
+	para "Oh! Prawie zapom-"
+	line "niałam! Twój #-"
 
-	para "Oh! I almost for-"
-	line "got! Your #MON"
+	para "GEAR wrócił z nap-"
+	line "rawy!"
 
-	para "GEAR is back from"
-	line "the repair shop."
-
-	para "Here you go!"
+	para "Proszę bardzo!"
 	done
 
 MomGivesPokegearText:
-	text "#MON GEAR, or"
-	line "just #GEAR."
+	text "#MON GEAR, czy"
+	line "po prostu #-"
+	cont "GEAR."
 
-	para "It's essential if"
-	line "you want to be a"
-	cont "good trainer."
+	para "Jest niezbędny dla"
+	line "dobrych trenerów."
 
-	para "Oh, the day of the"
-	line "week isn't set."
+	para "Oh, nie ustawi-"
+	line "liśmy dnia tygod-"
+	cont "nia."
 
-	para "You mustn't forget"
-	line "that!"
+	para "Nie możemy o tym"
+	line "zapomnieć!"
 	done
 
 IsItDSTText:
-	text "Is it Daylight"
-	line "Saving Time now?"
+	text "Czy to czas let-"
+	line "ni?"
 	done
 
 ComeHomeForDSTText:
-	text "Come home to"
-	line "adjust your clock"
+	text "Przyjdź do domu,"
+	line "aby skompensować"
+	
+	para "za zmianę czasu"
+	line "letniego."
 
-	para "for Daylight"
-	line "Saving Time."
-
-	para "By the way, do you"
-	line "know how to use"
-	cont "the PHONE?"
+	para "Przy okazji, wiesz"
+	line "jak korzystać z"
+	cont "TELEFONU?"
 	done
 
 KnowTheInstructionsText:
-	text "Don't you just"
-	line "turn the #GEAR"
-
-	para "on and select the"
-	line "PHONE icon?"
+	text "Włączasz #GEAR"
+	line "i wybierasz ikonę"
+	cont "TELEFONU, nie?"
 	done
 
 DontKnowTheInstructionsText:
-	text "I'll read the"
-	line "instructions."
+	text "Przeczytam"
+	line "instrukcje."
 
-	para "Turn the #GEAR"
-	line "on and select the"
-	cont "PHONE icon."
+	para "Włącz #GEAR i"
+	line "wybierz ikonę"
+	cont "TELEFONU."
 	done
 
 InstructionsNextText:
-	text "Phone numbers are"
-	line "stored in memory."
+	text "Numery telefonu są"
+	line "zapisywane w pa-"
+	cont "mięci."
 
-	para "Just choose a name"
-	line "you want to call."
+	para "Po prostu wybie-"
+	line "rasz do kogo"
+	cont "chcesz dzwonić."
 
-	para "Gee, isn't that"
-	line "convenient?"
+	para "No, nie jest to"
+	line "wygodne?"
 	done
 
 HurryUpElmIsWaitingText:
-	text "PROF.ELM is wait-"
-	line "ing for you."
+	text "PROF.ELM na ciebie"
+	line "czeka."
 
-	para "Hurry up, baby!"
+	para "Dawaj, synku!"
 	done
 
 SoWhatWasProfElmsErrandText:
-	text "So, what was PROF."
-	line "ELM's errand?"
+	text "Więc, co chciał"
+	line "PROF. ELM?"
 
 	para "…"
 
-	para "That does sound"
-	line "challenging."
+	para "To nie brzmi pros-"
+	line "to."
 
-	para "But, you should be"
-	line "proud that people"
-	cont "rely on you."
+	para "Ale powinieneś się"
+	line "cieszyć, że ludzie"
+	cont "polegają na tobie."
 	done
 
 ImBehindYouText:
-	text "<PLAYER>, do it!"
+	text "<PLAYER>, dawaj!"
 
-	para "I'm behind you all"
-	line "the way!"
+	para "Jestem za tobą"
+	line "cały czas!"
 	done
 
 PlayersHouse1FStoveText:
-	text "Mom's specialty!"
+	text "Specjalność mamy!"
 
-	para "CINNABAR VOLCANO"
-	line "BURGER!"
-	done
+	para "BURGER WULKANU"
+	line "CINNABAR!"
+	donep
 
 PlayersHouse1FSinkText:
-	text "The sink is spot-"
-	line "less. Mom likes it"
-	cont "clean."
+	text "Zlew jest czysty."
+	line "Mama go tak lubi."
 	done
 
 PlayersHouse1FFridgeText:
-	text "Let's see what's"
-	line "in the fridge…"
+	text "Zobaczmy, co w"
+	line "lodówce…"
 
-	para "FRESH WATER and"
-	line "tasty LEMONADE!"
+	para "ŚWIEŻA WODA i"
+	line "pyszna LEMONIADA!"
 	done
 
 PlayersHouse1FTVText:
-	text "There's a movie on"
-	line "TV: Stars dot the"
+	text "Na telewizorze gra"
+	line "film: Chłopczyk"
 
-	para "sky as two boys"
-	line "ride on a train…"
+	para "z odległej krainy"
+	line "spóźnia się do la-"
+	cont "boratorium…"
 
-	para "I'd better get"
-	line "rolling too!"
+	para "Też się powinienem"
+	line "śpieszyć!"
 	done
 
 PlayersHouse1F_MapEvents:

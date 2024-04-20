@@ -160,9 +160,9 @@ Options_TextSpeed:
 	dw .Mid
 	dw .Slow
 
-.Fast: db "SZYBKA@"
-.Mid:  db "NORM. @"
-.Slow: db "WOLNA @"
+.Fast: db "SZYBKA  @"
+.Mid:  db "NORMALNA@"
+.Slow: db "WOLNA   @"
 
 GetTextSpeed:
 ; converts TEXT_DELAY_* value in a to OPT_TEXT_SPEED_* value in c,
@@ -369,11 +369,11 @@ Options_Print:
 	dw .Darker
 	dw .Darkest
 
-.Lightest: db "NAJJAŚNIEJ @"
-.Lighter:  db "JAŚNIEJ    @"
-.Normal:   db "NORMALNE   @"
-.Darker:   db "CIEMNIEJ   @"
-.Darkest:  db "NAJCIEMNIEJ@"
+.Lightest: db "NAJJAŚN. @"
+.Lighter:  db "JAŚNIEJ  @"
+.Normal:   db "NORMALNE @"
+.Darker:   db "CIEMNIEJ @"
+.Darkest:  db "NAJCIEMN.@"
 
 GetPrinterSetting:
 ; converts GBPRINTER_* value in a to OPT_PRINT_* value in c,

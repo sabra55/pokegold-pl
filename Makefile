@@ -1,8 +1,8 @@
 roms := \
-	pokegold.gbc \
-	pokesilver.gbc \
 	pokegold_debug.gbc \
-	pokesilver_debug.gbc
+	pokesilver_debug.gbc \
+	pokegold.gbc \
+	pokesilver.gbc 
 patches := \
 	pokegold.patch \
 	pokesilver.patch
