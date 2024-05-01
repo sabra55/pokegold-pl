@@ -1141,24 +1141,11 @@ _MainMenuTimeUnknownText::
 	text "Clock time unknown"
 	done
 
-_OakText1::
-	text "Hello! Sorry to"
-	line "keep you waiting!"
-
-	para "Welcome to the"
-	line "world of #MON!"
-
-	para "My name is OAK."
-
-	para "People call me the"
-	line "#MON PROF."
-	prompt
-
 _OakText2::
-	text "This world is in-"
-	line "habited by crea-"
-	cont "tures that we call"
-	cont "#MON.@"
+	text "Ten świat jest za-"
+	line "mieszkany przez"
+	cont "stwory zwane #-"
+	cont "MONami.@"
 	text_end
 
 _OakText3::
@@ -1166,55 +1153,56 @@ _OakText3::
 	text_end
 
 _OakText4::
-	text "People and #MON"
-	line "live together by"
+	text "Ludzie współżyją"
+	line "z #MONami i"
 
-	para "supporting each"
-	line "other."
+	para "wzajemnie się"
+	line "wspierają."
 
-	para "Some people play"
-	line "with #MON, some"
-	cont "battle with them."
+	para "Niektórzy bawią"
+	line "się z #MONami,"
+	
+	para "inni z nimi wal-"
+	line "czą."
 	prompt
 
 _OakText5::
-	text "But we don't know"
-	line "everything about"
-	cont "#MON yet."
+	text "Ale nie znamy na"
+	line "razie wszystkiego"
+	cont "o #MONach."
 
-	para "There are still"
-	line "many mysteries to"
-	cont "solve."
+	para "Nadal jest wiele"
+	line "zagadek do złama-"
+	cont "nia."
 
-	para "That's why I study"
-	line "#MON every day."
+	para "Dlatego studiuję"
+	line "#MONy codzien-"
+	cont "nie."
 	prompt
 
 _OakText6::
-	text "Now, what did you"
-	line "say your name was?"
+	text "A, jak miałeś na"
+	line "imię znowu?"
 	prompt
 
 _OakText7::
-	text "<PLAYER>, are you"
-	line "ready?"
+	text "<PLAYER> gotowy?"
 
-	para "Your very own"
-	line "#MON story is"
-	cont "about to unfold."
+	para "Twoja własna his-"
+	line "toria z #MONami"
+	
+	para "właśnie się zaczy-"
+	line "na."
 
-	para "You'll face fun"
-	line "times and tough"
-	cont "challenges."
+	para "Spotka cię zabawa"
+	line "i trudne czasy."
 
-	para "A world of dreams"
-	line "and adventures"
+	para "Świat snów i przy-"
+	line "gód z #MONami"
 
-	para "with #MON"
-	line "awaits! Let's go!"
-
-	para "I'll be seeing you"
-	line "later!"
+	para "na ciebie czeka!"
+	line "Zobaczymy się póź-"
+	cont "niej!"
 	done
 
 _ClockTimeMayBeWrongText::

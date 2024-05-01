@@ -369,11 +369,11 @@ Options_Print:
 	dw .Darker
 	dw .Darkest
 
-.Lightest: db "NAJJAŚN. @"
-.Lighter:  db "JAŚNIEJ  @"
-.Normal:   db "NORMALNE @"
-.Darker:   db "CIEMNIEJ @"
-.Darkest:  db "NAJCIEMN.@"
+.Lightest: db "NAJJAŚN.@"
+.Lighter:  db "JAŚNIEJ @"
+.Normal:   db "NORMALNE@"
+.Darker:   db "CIEMNIEJ@"
+.Darkest:  db "NAJCIEM.@"
 
 GetPrinterSetting:
 ; converts GBPRINTER_* value in a to OPT_PRINT_* value in c,

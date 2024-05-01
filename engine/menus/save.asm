@@ -572,8 +572,8 @@ TryLoadSaveFile:
 	push af
 	set NO_TEXT_SCROLL, a
 	ld [wOptions], a
-	ld hl, SaveFileCorruptedText
-	call PrintText
+	ld b, CORRUPTED_SAVE_FILE
+	call ErrorScreen
 	pop af
 	ld [wOptions], a
 	scf
@@ -1051,33 +1051,40 @@ Checksum:
 	ret
 
 WouldYouLikeToSaveTheGameText:
-	text_far _WouldYouLikeToSaveTheGameText
-	text_end
+	text "Zapisać grę?"
+	done
 
 SavingDontTurnOffThePowerText:
-	text_far _SavingDontTurnOffThePowerText
-	text_end
+	text "ZAPIS W TOKU..."
+	line "NIE WYŁĄCZAJ GRY."
+	done
 
 SavedTheGameText:
-	text_far _SavedTheGameText
-	text_end
+	text "<PLAYER> zapisał"
+	line "grę!"
+	done
 
 AlreadyASaveFileText:
-	text_far _AlreadyASaveFileText
-	text_end
+	text "Istniejący zapis"
+	line "zostanie usunięty."
+	cont "W porządku?"
+	done
 
 AnotherSaveFileText:
-	text_far _AnotherSaveFileText
-	text_end
-
-SaveFileCorruptedText:
-	text_far _SaveFileCorruptedText
-	text_end
-
+	text "Istniejące zapisy"
+	line "zostaną usunięte."
+	cont "W porządku?"
+EmptyText1:
+	done
+	
 ChangeBoxSaveText:
-	text_far _ChangeBoxSaveText
-	text_end
+	text "Gdy zmieniasz BOX,"
+	line "gra zostaje zapi-"
+	cont "sana."
+	done
 
 MoveMonWOMailSaveText:
-	text_far _MoveMonWOMailSaveText
-	text_end
+	text "Gdy przenosisz"
+	line "#MONa, gra musi"
+	cont "zostać zapisana."
+	done

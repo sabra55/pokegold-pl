@@ -592,6 +592,8 @@ DoTextUntilTerminator::
 	ld a, [hli]
 	cp TX_END
 	ret z
+	cp NUM_TEXT_CMDS
+	jr nc, .invalid
 	call .TextCommand
 	jr DoTextUntilTerminator
 
@@ -612,6 +614,10 @@ DoTextUntilTerminator::
 	; jp de
 	push de
 	ret
+	
+.invalid:
+	ld b, INVALID_TEXT_COMMAND
+	jp ErrorScreen
 
 TextCommands::
 ; entries correspond to TX_* constants (see macros/scripts/text.asm)

@@ -1,8 +1,8 @@
 ; rst vectors (called through the rst instruction)
 
 SECTION "rst0", ROM0[$0000]
-	di
-	jp Start
+	ld b, ERROR_CRASH1
+	jp ErrorScreen
 
 SECTION "rst8", ROM0[$0008]
 FarCall::
@@ -15,10 +15,12 @@ Bankswitch::
 	ret
 
 SECTION "rst18", ROM0[$0018]
-	rst $38
+	ld b, ERROR_CRASH2
+	jp ErrorScreen
 
 SECTION "rst20", ROM0[$0020]
-	rst $38
+	ld b, ERROR_CRASH3
+	jp ErrorScreen
 
 SECTION "rst28", ROM0[$0028]
 JumpTable::
@@ -35,8 +37,8 @@ JumpTable::
 	jp hl
 
 SECTION "rst38", ROM0[$0038]
-	rst $38
-
+	ld b, ERROR_CRASH4
+	jp ErrorScreen
 
 ; Game Boy hardware interrupts
 

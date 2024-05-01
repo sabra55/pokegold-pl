@@ -250,7 +250,13 @@ LoadOrRegenerateLuckyIDNumber:
 
 Continue:
 	farcall TryLoadSaveFile
-	jr c, .FailToLoad
+	push af
+	ld a, [wSaveFileExists]
+	and a
+	ld b, SAVE_FILE_NOT_FOUND
+	jp z, ErrorScreen
+	pop af
+	ret c
 	call LoadStandardMenuHeader
 	call DisplaySaveInfoOnContinue
 	ld a, $1
@@ -259,14 +265,12 @@ Continue:
 	call DelayFrames
 	call ConfirmContinue
 	jr nc, .Check1Pass
-	call CloseWindow
-	jr .FailToLoad
+	jp CloseWindow
 
 .Check1Pass:
 	call Continue_CheckRTC_RestartClock
 	jr nc, .Check2Pass
-	call CloseWindow
-	jr .FailToLoad
+	jp CloseWindow
 
 .Check2Pass:
 	ld a, $8
@@ -289,9 +293,6 @@ Continue:
 	ld a, MAPSETUP_CONTINUE
 	ldh [hMapEntryMethod], a
 	jp FinishContinueFunction
-
-.FailToLoad:
-	ret
 
 .SpawnAfterE4:
 	ld a, SPAWN_NEW_BARK
@@ -577,8 +578,18 @@ OakSpeech:
 	ret
 
 OakText1:
-	text_far _OakText1
-	text_end
+	text "Cześć! Wybacz, że"
+	line "musiałeś czekać!"
+	
+	para "Witaj w świecie"
+	line "#MONów!"
+	
+	para "Mam na imię OAK."
+	
+	para "Ludzie zwą mnie"
+	line "profesorem #-"
+	cont "MONów."
+	prompt
 
 OakText2:
 	text_far _OakText2

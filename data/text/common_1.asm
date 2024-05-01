@@ -97,19 +97,19 @@ _OakTimeWokeUpText::
 	text "<……><……><……><……><……><……>"
 	line "<……><……><……><……><……><……>"
 
-	para "Zzz… Hm? Wha…?"
-	line "You woke me up!"
+	para "Zzz… Hm? Co…?"
+	line "Obudziłeś mnie!"
 
-	para "Will you check the"
-	line "clock for me?"
+	para "Sprawdzisz czas" 
+	line "dla mnie?"
 	prompt
 
 _OakTimeWhatTimeIsItText::
-	text "What time is it?"
+	text "Która godzina?"
 	done
 
 _OakTimeWhatHoursText::
-	text "What?@"
+	text "Co?@"
 	text_end
 
 _OakTimeHoursQuestionMarkText::
@@ -117,11 +117,11 @@ _OakTimeHoursQuestionMarkText::
 	done
 
 _OakTimeHowManyMinutesText::
-	text "How many minutes?"
+	text "Ile minut?"
 	done
 
 _OakTimeWhoaMinutesText::
-	text "Whoa!@"
+	text "@"
 	text_end
 
 _OakTimeMinutesQuestionMarkText::
@@ -130,27 +130,27 @@ _OakTimeMinutesQuestionMarkText::
 
 _OakTimeOversleptText::
 	text "!"
-	line "I overslept!"
+	line "Zaspałem!"
 	done
 
 _OakTimeYikesText::
 	text "!"
-	line "Yikes! I over-"
-	cont "slept!"
+	line "Zaspałem!!"
 	done
 
 _OakTimeSoDarkText::
 	text "!"
-	line "No wonder it's so"
-	cont "dark!"
+	line "Nic dziwnego, że"
+	cont "jest tak ciemno!"
 	done
 
 _OakTimeWhatDayIsItText::
-	text "What day is it?"
+	text "Który dzisiaj"
+	line "dzień?"
 	done
 
 _OakTimeIsItText::
-	text ", is it?"
+	text ", tak?"
 	done
 
 _EnemyWithdrewText::

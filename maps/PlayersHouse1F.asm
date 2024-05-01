@@ -259,7 +259,7 @@ PlayersHouse1FStoveText:
 
 	para "BURGER WULKANU"
 	line "CINNABAR!"
-	donep
+	done
 
 PlayersHouse1FSinkText:
 	text "Zlew jest czysty."

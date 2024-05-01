@@ -280,14 +280,15 @@ JoyTitleScreenInput:: ; unreferenced
 	jr nz, .keycombo
 
 	dec c
-	jr nz, .loop
+; usunąć 6 bajtów
+;	jr nz, .loop
 
-	and a
-	ret
+;	and a
+;	ret
 
 .keycombo
-	scf
-	ret
+;	scf
+;	ret
 
 JoyWaitAorB::
 .loop
@@ -427,7 +428,7 @@ PromptButton::
 
 .blink_cursor
 	ldh a, [hVBlankCounter]
-	and %00010000 ; bit 4, a
+	bit 4, a
 	jr z, .cursor_off
 	ld a, "▼"
 	jr .load_cursor_state
@@ -480,4 +481,11 @@ BlinkCursor::
 	ldh [hObjectStructIndex], a
 	ld a, "▼"
 	ld [hl], a
+	ret
+	
+; b - identyfikator błędu
+ErrorScreen::
+	ld a, b
+	ld [wWhichError], a
+	farcall _ErrorScreen
 	ret

@@ -361,6 +361,11 @@ SECTION "Item Descriptions", ROMX
 INCLUDE "data/items/descriptions.asm"
 
 
+SECTION "Error Screen", ROMX
+
+INCLUDE "engine/menus/error.asm"
+
+
 SECTION "bank70", ROMX
 
 INCLUDE "engine/printer/print_party.asm"

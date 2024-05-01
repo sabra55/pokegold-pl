@@ -251,6 +251,8 @@ ROMX $6d
 	"Move Descriptions"
 ROMX $6e
 	"Item Descriptions"
+ROMX $6f
+	"Error Screen"
 ROMX $70
 	"bank70"
 	"Tileset Data 6"
